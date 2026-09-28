@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>INTERMEZZO JAYA</title>
+  <style>
+    body {
+      background-color: #fff3e0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: crimson;
+    }
+    p {
+      color: darkgreen;
+      font-size: 20px;
+    }
+    input, button {
+      font-size: 18px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome To Michael</h1>
+  <p id="sapaan">Ketik namamu, lalu klik tombol.</p>
+
+  <input id="namaku" type="text" placeholder="Nama kamu...">
+  <button onclick="sapa()">Klik aku!</button>
+
+  <script>
+    function sapa() {
+      let nama = document.getElementById("namaku").value;
+      document.getElementById("sapaan").textContent = "You are so beautiful " + nama + ". TAPI BOONG ";
+    }
+  </script>
+</body>
+</html>
